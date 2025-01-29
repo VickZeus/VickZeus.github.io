@@ -22,6 +22,13 @@ body
     margin: 40px 0px 0px 60px;
 }
 
+.name:hover 
+{
+    text-shadow:4px 10px 10px rgba(241, 245, 9, 0.952);
+
+}
+
+
 .options
 {
     display: flex;
@@ -53,6 +60,12 @@ div button
     font-size:32px;
     margin:0px 20px 40px 20px;
     font-style: italic;
+}
+
+
+div button:hover
+{
+    color:aquamarine;
 }
 
 .horizontalrule
