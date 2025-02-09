@@ -1,0 +1,193 @@
+
+body
+{
+    background-color: rgba(255, 255, 255, 0.693);
+    margin:0px;
+    padding:0px;
+}
+
+.headingsection
+{
+    background-color: rgba(255, 255, 255, 0.693);
+}
+
+.heading
+{
+    display:flex;
+    justify-content: right;
+}
+
+
+.name
+{
+    display: fixed;
+    text-wrap:nowrap;
+    color:rgba(18, 24, 43, 0.81);
+    font-style:italic;
+    font-family:'Playwrite VN','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: clamp(30px,3.5vmin,100px);
+    margin: 40px 0px 0px 50px;
+}
+
+.name:hover 
+{
+    text-shadow:2px 2px 10px rgba(29, 145, 195, 0.952);
+}
+
+
+.options
+{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:right
+}
+
+
+.home
+{
+    margin-left:2vmin;
+}
+
+.projects
+{
+    margin-right:50px;
+}
+
+div button
+{   
+    background-color: transparent;
+    border:none;
+    font-family: "Lexend Deca", serif;
+    color:rgba(15, 39, 63, 0.919);
+    font-size: clamp(18px,2vmin,36px);
+    margin:0px 40px 0px 20px;
+}
+
+
+div button:hover
+{
+    color:rgba(15, 39, 63, 0.142);
+}
+
+.horizontalrule
+{
+    margin-top: 14px;
+    margin-bottom:0px;
+    border-color: rgb(0, 0, 0);
+}
+
+.homedesc
+{
+    font-family:'Ranchers';
+    color:aliceblue;
+    font-size: 5vmin; 
+    margin:110px 0px 50px 100px;
+    text-shadow: 5px 5px 1px rgba(9, 9, 245, 0.952);
+}
+
+.homedesc:hover
+{
+    text-shadow: 7px 5px 1px rgba(9, 9, 245, 0.952);
+}
+
+.profilepic
+{
+    width:30vmin;
+    height:30vmin;
+
+    box-shadow: 6px 6px rgb(249, 238, 72);
+}
+
+.profilepic:hover
+{
+    box-shadow:10px 10px rgb(249, 238, 72);
+}
+
+.img1
+{
+    display:flex;
+    justify-content:space-around;
+    margin:20px 50px 10px 0px;
+}
+
+p.aboutme
+{
+    display:inline-block;
+    width:75vmin;
+    height:25vmin;
+
+    padding:15px 20px 20px 40px;
+    text-align:center;
+    color:rgb(179, 218, 247); 
+    font-family: "DynaPuff", serif;
+    text-align:left;
+    font-size:1.75vmin;
+}
+
+
+.contactdet
+{
+    font-family:'Ranchers';
+    color:aliceblue;
+    font-size: 5vmin; 
+    margin:110px 0px 50px 100px;
+    text-shadow: 5px 5px 1px rgba(245, 9, 221, 0.952);
+}
+
+
+.defaultpage
+{
+   display: flex;
+   justify-content:left;
+}
+
+.defaulttext
+{
+    display: flex;
+    align-self: center;
+    position:absolute;
+    z-index:10;
+    font-family: "Lexend Deca", serif;
+    color:seashell;
+    margin:40px 10px 20px 50px;
+    font-size: 16vmin;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.952);
+}
+
+.c1
+{
+    height:90vh;
+    width:25vw;
+    background-color: rgb(38, 65, 146);
+}
+
+.c2
+{
+    height:90vh;
+    width:25vw;
+    background-color: rgb(161, 198, 234);
+}
+
+.c3
+{
+    height:90vh;
+    width:25vw;
+    background-color: rgb(187, 209, 234);
+}
+
+.c4
+{
+    height:90vh;
+    width:25vw;
+    background-color: rgb(218, 227, 229);
+}
+
+.c5
+{
+    height:90vh;
+    width:25vw;
+    background-color: rgb(212, 180, 131);
+}
