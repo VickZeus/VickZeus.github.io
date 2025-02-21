@@ -26,10 +26,10 @@
             <div class="name">Abhishek Singh</div> <!--Heading Name-->  
             <div class="heading">
                 <div class="options"> <!--Buttons Home,About,Contact,Projects-->
-                    <button class="home" onclick="change('abtme','hm2')">Home</button>
-                    <button class="about" onclick="change('hm1','hm2')">About</button>
-                    <button class="contact" onclick="change('hm1','hm2')">Contact</button>
-                    <button class="projects" onclick="change('hm1','hm2')">Projects</button>
+                    <button class="home" onclick="showsection('home')">Home</button>
+                    <button class="about" onclick="showsection('about')">About</button>
+                    <button class="contact" onclick="showsection('contactinfo')">Contact</button>
+                    <button class="projects" onclick="showsection('projects')">Projects</button>
                 </div>
             </div>
             <hr class="horizontalrule">
@@ -37,7 +37,7 @@
 
 
         <!--Default Page-->
-        <div>
+        <div id="home" class="default">
             <div class="defaulttext">"In pursuit <br> &nbsp &nbsp   &nbsp  &nbsp  of <br>perfection."</div>
             <div class="defaultpage">
                 <div class="c1"></div>
@@ -48,34 +48,31 @@
             </div>
         </div>
 
-
-
-        
-        <!--
-        <div id="abtme">
-            <p class="homedesc">&lt About Me &gt</p>
+        <!--About me section-->
+        <div id="about" class="ABOUT">
+            <p class="abtmehead">&lt About Me &gt</p>
             <div class="img1">
                 <p class="aboutme">
-                    Hey I am Abhishek Singh! A Sophomore and a tech enthusiast. I have a passion for learning new technologies and applying them to solve real-world problems. I am currently exploring web development and working on various projects to enhance my skills. 
-                    In my free time, I enjoy reading tech blogs and participating in hackathons. 
-                    <br><br>I also love collaborating with like-minded individuals and contributing to open-source projects. My goal is to become a full-stack developer and create impactful software solutions.
+                    Fueled by curiosity, I have a passion for exploring, learning, and mastering new technologies. 🔍💻
+                    <br>
+                    I’m always excited to dive into anything that sparks my interest! ⚡
+                    <br>
+                    Currently, I’m sharpening my skills in Competitive Programming 🏆 and Web Development 🌐.<br>Additionally, I’m upskilling in the AI domain 🤖 to expand my expertise.  
                 </p>
-                <img src="img1.jpg" class="profilepic">
+                <img class="abtpic1" src="https://blush.design/api/download?shareUri=o43qaONUbzd-PWbK&c=Bottom_0%7E393f82-0.0%7E342a83-0.0.0.1%7E2b44ff-0.0.0.2%7E89c5cc_Hair_0%7Eb58143-0.0%7Eb58143-0.0.0.1%7E2c1b18-0.0.0.2%7E181658_Skin_0%7Edcae92-0.0%7E915b3c-0.0.0.1%7Eb28b67-0.0.0.2%7Edcae92_Top_0%7Ea8e5ba-0.0%7Eff4133-0.0.0.1%7Ea8e5ba-0.0.0.2%7Ef2f2f2&bg=264192&w=800&h=800&fm=png" class="profilepic">
             </div>
-        </div>-->
+            <div class="abtmessage">&ltJUST TRYING TO DO BETTER !!&gt</div> 
+        </div>
+
+        <div id="contactinfo" class="contactsegment">
+            <p>HELLO WORLD</p>
+        </div>
 
 
-        <!--
-        <div id="hm2">
-            <p class="contactdet">&lt Contact Details &gt</p>
-            <div class="contactdetabt">
-                
-            </div>
-        </div>-->
+
+
         
-
-
-
+        
     <script src="functionality.js"></script>
     </body>
 </html>
