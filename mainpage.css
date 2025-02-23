@@ -335,7 +335,7 @@ p.aboutme
     position:absolute;
     color:rgb(246, 248, 249);
     text-shadow: 2px 2px 5px rgb(8, 8, 8);
-    background-image:url("./BackgroundMainPage.png");
+    background-image:url("BackgroundMainPage.png");
     height:100%;
     width:100%;
     margin:0%;
