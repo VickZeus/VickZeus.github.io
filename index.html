@@ -5,8 +5,14 @@
         <meta charset="utf-8">
         <title>HomePage</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="mainpage.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,15 +37,17 @@
             <div class="name">Abhishek Singh</div> <!--Heading Name-->  
             <div class="heading">
                 <div class="options"> <!--Buttons Home,About,Contact,Projects-->
-                    <button class="home" onclick="showsection('home')">Home</button>
-                    <button class="about" onclick="showsection('about')">About</button>
-                    <button class="contact" onclick="showsection('contactinfo')">Contact</button>
-                    <button class="projects" onclick="showsection('projects')">Projects</button>
+                    <button id="but_home" class="home" onclick="showsection('home',id)">Home</button>
+                    <button id="but_about" class="about" onclick="showsection('about',id)">About</button>
+                    <button id="but_contact" class="contact" onclick="showsection('contactinfo',id)">Contact</button>
+                    <button id="but_project" class="projects" onclick="showsection('projects',id)">Projects</button>
+                    <a href="Resume.pdf" download="Resume.pdf">
+                        <button>Resume</button>
+                    </a>
                 </div>
             </div>
             <hr class="horizontalrule">
         </div>
-
 
         <!--Default Page-->
         <div id="home" class="default">
@@ -54,19 +62,53 @@
         </div>
 
         <!--About me section-->
-        <div id="about" class="ABOUTSEGMENT">
-            <p class="abtmehead">&lt About Me &gt</p>
-            <div class="img1">
-                <p class="aboutme">
-                    Fueled by curiosity, I have a passion for exploring, learning, and mastering new technologies. 🔍💻
-                    <br>
-                    I’m always excited to dive into anything that sparks my interest! ⚡
-                    <br>
-                    Currently, I’m sharpening my skills in Competitive Programming 🏆 and Web Development 🌐.<br>Additionally, I’m upskilling in the AI domain 🤖 to expand my expertise.  
-                </p>
-                <img class="abtpic1" src="https://blush.design/api/download?shareUri=o43qaONUbzd-PWbK&c=Bottom_0%7E393f82-0.0%7E342a83-0.0.0.1%7E2b44ff-0.0.0.2%7E89c5cc_Hair_0%7Eb58143-0.0%7Eb58143-0.0.0.1%7E2c1b18-0.0.0.2%7E181658_Skin_0%7Edcae92-0.0%7E915b3c-0.0.0.1%7Eb28b67-0.0.0.2%7Edcae92_Top_0%7Ea8e5ba-0.0%7Eff4133-0.0.0.1%7Ea8e5ba-0.0.0.2%7Ef2f2f2&bg=264192&w=800&h=800&fm=png" class="profilepic">
+        <div id="about" class="aboutsegment">
+            <div id="intro" class="intro">
+                <div id="whoami" class="obj1">
+                    <div class="abthead">
+                        WHO AM I ?
+                    </div>
+
+                    <div class="abtdesc">
+                        <div class="abtpass">
+                            A curious individual with a passion for techonology. A CSE sophomore trying to understand and master one tech at a time. 
+                            Am a fast learner and believes in learning things straight from the zero.
+                            <br><br>   
+                            Currently working day and night to further sharpen my web and AI development skills, master competitive programming , have an active social life and juggle with college curriculum. 
+                            <br><br>
+
+                            <div class="logoset">
+                                <a href="https://www.geeksforgeeks.org/user/abhisheksi37m2/?ref=header_profile" target="_blank">
+                                    <img src="gfg.svg" alt="GeeksforGeeks" class="logo">
+                                </a>
+                                
+                                <a href="https://www.codechef.com/users/abhishek160405" target="_blank">
+                                        <img src="codechef.png" alt="CodeChef" class="codechef">
+                                </a>
+                                <a href="hhttps://leetcode.com/u/abhisheksingh160405/" target="_blank">
+                                        <img src="leetcode.svg" alt="LeetCode" class="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <img src="contactbg.jpg" class="abtpic"></img>
+                    </div>
+                </div>
+
+                <div id="belief" class="obj1">
+                    <div class="abthead">
+                        WHAT I BELIEVE IN ?
+                    </div>
+                    <div class="abtpass">
+                        I believe great things take time and patience. Rome wasn't built in a day and neither does one's skills. 
+                        True skills emerge only after months of hardwork,understanding and dedication. In a world filled with instant gratification, I believe in the power of patience and hardwork.
+                        <br><br>
+                        I also have a thing for chasing perfection over success. I believe success is temporary but perfection is what stays.
+
+                    </div>
+                </div>
+                
             </div>
-            <div class="abtmessage">&ltJUST TRYING TO DO BETTER !!&gt</div> 
+
         </div>
 
 
@@ -93,20 +135,76 @@
                     Reach Out To Me At : 
                     <a href="mailto: abhishek1604.official@gmail.com"> abhishek1604.official@gmail.com</a>
                 </div>
-        </div>
+            </div>
 
         </div>
-
 
         <!--PROJECT SEGMENT -->
-        <!--<div id="projects" class="projectsegment">
-            <p class="contactdet">HELLO WORLD</p>
-        </div>-->
+        <div id="projects" class="projectsegment">
+            <div class="pro_heading"><u>PROJECT HISTORY</u></div>
+
+            <div class="projectlist">
+
+                <div class="project">
+                    <ph>SOIL QUALITY ANALYSIS</ph>
+                    <br><br>
+                    <div class="description">
+                    <desc>The Soil Monitoring System is an advanced sensor-based solution designed to assess and predict soil quality using ESP8266 and Arduino UNO. This system integrates multiple sensors to measure humidity, temperature, and pH levels, providing real-time data essential for sustainable agriculture and efficient land management.
+                        By continuously monitoring soil conditions, farmers and researchers can analyze trends, detect imbalances, and optimize irrigation and fertilization strategies. The ESP8266 module ensures seamless wireless data transmission, allowing remote access to crucial soil metrics. Meanwhile, the Arduino UNO processes sensor inputs, ensuring accurate readings and reliable performance.
+                        <br><br>
+                        <div style="font-family:'Rowdies', serif;">
+                            Tech-Stack : <ts>Python,MySQL,Arduino,PySerial,Matplotlib </ts>
+                        </div>
+                        <div style="font-family:'Rowdies', serif;">
+                            GitHub Link : <a href="https://github.com/VickZeus/Engineering-Clinics-Soil-Monitoring-System-.git">Project Link</a>
+                        </div>
+                    </desc>
+                    <img class="image" src="SoilQuality.png" height="200px" width="200px">
+                    </div>
+                </div>
 
 
+                <div class="project">
+                    <ph>TIC TAC TOE</ph>
+                    <br><br>
+                    <div class="description">
+                    <desc>
+                        Console-based 'Tic-Tac-Toe' game offers a structured two-player experience with custom names, symbol selection, and automated input correction. Players take turns selecting positions on a dynamic board, with real-time updates and win detection. The game ensures valid moves, announces the winner, and provides a replay option. Future enhancements could include an AI opponent, a GUI, and a score-tracking system.<br><br>
+                        <div style="font-family:'Rowdies', serif;">
+                            Tech-Stack : <ts>Python </ts>
+                        </div>
+                        <div style="font-family:'Rowdies', serif;">
+                            GitHub Link : <a href="https://github.com/VickZeus/TIC_TAC_TOE-GAME_VS-PLAYER-MODE.git">Project Link</a>
+                        </div>
+                    </desc>
+                    <img class="image" src="TICTACTOE.png" height="200px" width="200px">
+                    </div>
+                </div>
 
-        
-        
-    <script src="functionality.js"></script>
+
+                <div class="project">
+                    <ph>AIRLINE RESERVATION MIMICKING SYSTEM</ph>
+                    <br><br>
+                    <div class="description">
+                    <desc>
+                        The Airline Reservation System is a terminal-based Java application that provides an interactive interface for booking flights, selecting seats, and making payments. It features structured menus, formatted text displays, and smooth transitions using animations and timed delays. The system ensures a user-friendly experience with real-time prompts and a unique ticket generation system. Designed for efficiency, it enhances the booking process while maintaining a clean and professional interface.
+                        <br><br>
+                        <div style="font-family:'Rowdies', serif;">
+                            Tech-Stack : <ts>Java,MySQL</ts>
+                        </div>
+                        <div style="font-family:'Rowdies', serif;">
+                            GitHub Link : <a href="https://github.com/VickZeus/Airline-Reservation-System.git">Project Link</a>
+                        </div>
+                    </desc>
+                    <img class="image" src="Airline.png" height="200px" width="200px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="functionality.js"></script>
     </body>
 </html>
+
+
