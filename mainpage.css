@@ -699,5 +699,20 @@ ts
 {
     display: flex;
     justify-content: space-around;
-    margin:20px 0px 20px 0px;
+    animation-name : logofun;
+    animation-duration: 5s;
+}
+
+@keyframes logofun 
+{
+    from
+    {
+        justify-content : center;
+        opacity:0;
+    }
+    to 
+    {  
+        opacity :1;
+        justify-content : space-around;
+    }
 }
