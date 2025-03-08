@@ -1,13 +1,13 @@
 body
 {
-    background-color: rgba(255, 255, 255, 0.693);
+    background-color: rgba(255, 255, 255, 0.803);
     margin:0px;
     padding:0px;
 }
 
 .headingsection
 {
-    background-color: rgba(255, 255, 255, 0.693);
+    background-color: rgba(255, 255, 255, 0.803);
 }
 
 .heading
@@ -28,26 +28,16 @@ body
     color:rgba(18, 24, 43, 0.81);
     font-style:italic;
     font-family:'Playwrite VN','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: clamp(30px,3.5vmin,100px);
+    font-size:4vmin;
+    font-weight:600;
     margin: 40px 0px 0px 50px;
-    animation-name:nameshadow;
-    animation-duration:10s;
-    text-shadow:-2px -2px 10px rgba(66, 5, 250, 0.952);
 }
 
-/*.name:hover 
-{
-    text-shadow:2px 2px 10px rgba(29, 145, 195, 0.952);
-}*/
 
-@keyframes nameshadow
-{
-    0%{text-shadow:-4px -4px 10px rgba(66, 5, 250, 0.952);}
-    25%{text-shadow:-4px -4px 10px rgba(66, 5, 250, 0.952);}
-    50%{text-shadow:-4px -4px 10px rgba(66, 5, 250, 0.952);}
-    75%{text-shadow:-2px -2px 10px rgba(66, 5, 250, 0.952);}
-    100%{text-shadow:2px 2px 10px rgba(66, 5, 250, 0.952);}
-}
+
+
+
+
 
 
 .options
@@ -73,6 +63,7 @@ div button
     background-color: transparent;
     border:none;
     font-family: "Lexend Deca", serif;
+    font-weight: 500;
     color:rgba(15, 39, 63, 0.919);
     font-size: clamp(18px,2vmin,36px);
     margin:0px 40px 0px 20px;
@@ -107,60 +98,146 @@ div button:hover
     text-shadow: 5px 5px 5px rgb(187, 209, 234);
 }
 
-.abtpic1 {
+.abtpic1 
+{
     width: 50vmin;
     height: 50vmin;
 }
 
 
 
-.img1 {
+.img1 
+{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px 50px 10px 0px;
 }
 
-.ABOUTSEGMENT
+
+.aboutsegment
 {
-    margin-top:0px;
-    display: none;
-    width: 100%;
-    height:100%;
-    background-color: rgb(38, 65, 146);
-    position:absolute;
-    min-height: 100vh;
+    background-image:url(background2.png);
+    background-position: center;
+    background-size:cover;
+    display:none;
+    min-height:200vh;
+    margin-bottom:500px;
 }
 
 
-p.aboutme 
+.abthead 
 {
-    display: inline-block;
-    border-style: solid;
-    border-radius: 25px;
-    border-color: bisque;
-    border-width: 2px;
-    background-color: rgb(187, 209, 234);
-    padding: 15px 20px 20px 40px;
-    text-align: center;
-    color: rgb(253, 254, 255);
-    font-family: "DynaPuff", serif;
-    text-align: left;
-    text-shadow: 1px 1px 1px rgba(5, 5, 5, 0.952);
-    font-size: 1.9vmin;
-    box-shadow: 1px 2px 2px rgba(37, 107, 204, 0.952);
-    margin-left: 20px;
+    padding:50px 0px 20px 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:6vmin;
+    color:rgba(213, 212, 212, 0.993);
+    font-weight:350;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.803);
+
+    animation-name:slidein;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}   
+
+@keyframes slidein 
+{
+    from
+    {
+        color :transparent;
+        transform: translateX(50px);
+    }
+    to 
+    {
+    color:rgba(213, 212, 212, 0.993);
+        transform:translateX(0px);
+    }
 }
 
 
-.abtmessage
+
+.abtdesc
 {
-    font-family: "Lexend Deca", serif;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+
+
+
+.abtpass
+{
+    font-size:2.5vmin;
     color:rgb(255, 255, 255);
-    font-size: 5vmin; 
-    text-align: center;
-    text-shadow: 5px 5px 4px rgb(21, 122, 169);
+    overflow:auto;
+    font-family : "Space Grotesk", serif;
+    word-wrap: break-word;
+    margin-left :30px;
+    border-radius: 20px;
+    background-color: rgb(22, 20, 17);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.686);
+
+    animation-name : descslidein;
+    animation-duration: 2s;
 }
+
+@keyframes descslidein 
+{
+    from
+    {
+        color :transparent;
+        transform: translateY(50px);
+    }
+    to 
+    {
+    color:rgba(213, 212, 212, 0.993);
+        transform:translateY(0px);
+    }
+}
+
+
+.abtpic 
+{
+    height:40vmin;
+    width:40vmin;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius: 25px;
+
+    animation-name : picfun;
+    animation-duration: 2s;
+}
+
+@keyframes picfun 
+{
+    from 
+    {
+        transform: rotate(360deg);
+        height:0vmin;
+        width:0vmin;
+    }
+    to 
+    {
+        height:40vmin;
+        width:40vmin;
+        transform : rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
 
 
 .defaultpage
@@ -180,6 +257,46 @@ p.aboutme
     left: 50%; 
     transform: translate(-50%, -50%);
     text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.952);
+
+    animation-name : defaultfun;
+    animation-duration:5s;
+
+}
+
+@keyframes defaultfun 
+{
+    0% 
+    {
+        font-family : "Space Grotesk", serif;
+        font-size:16vmin;
+
+    }
+    20% 
+    {
+        font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:16vmin;
+    }
+    40% 
+    {
+        font-family:"ranchers";
+        font-size:16vmin;
+    }
+    60%
+    {
+        font-family :Verdana, Geneva, Tahoma, sans-serif;
+        font-size:16vmin;
+    }
+    80% 
+    {   
+        font-family : 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+        font-size:16vmin;
+    }
+    100%
+    {
+        font-family :"Lexend Deca", serif;
+        color:seashell;
+        font-size:16vmin;
+    }
 }
 
 
@@ -189,7 +306,7 @@ p.aboutme
 {
     height:90vh;
     width:25vw;
-    background-color: rgb(10, 68, 242);
+    background-color: rgb(0, 0, 0);
     animation-name: slidedownc1;
     animation-duration: 5s;
 }
@@ -199,7 +316,7 @@ p.aboutme
 
     height:90vh;
     width:25vw;
-    background-color: rgb(39, 140, 242);
+    background-color: rgb(25, 36, 46);
     animation-name: slidedownc2;
     animation-duration: 5s;
 }
@@ -208,7 +325,7 @@ p.aboutme
 {
     height:90vh;
     width:25vw;
-    background-color: rgb(82, 155, 238);
+    background-color: rgb(45, 55, 67);
     animation-name: slidedownc3;
     animation-duration: 5s;
 }
@@ -217,7 +334,7 @@ p.aboutme
 {
     height:90vh;
     width:25vw;
-    background-color: rgb(68, 202, 233);
+    background-color: rgb(49, 57, 59);
     animation-name: slidedownc4;
     animation-duration: 5s;
 }
@@ -226,7 +343,7 @@ p.aboutme
 {
     height:90vh;
     width:25vw;
-    background-color: rgb(206, 147, 57);
+    background-color: rgb(151, 157, 158);
     animation-name: slidedownc5;
     animation-duration: 5s;
 }
@@ -234,76 +351,76 @@ p.aboutme
 @keyframes slidedownc1 
 {
     0% {
-        background-color: rgb(64, 213, 185);
+        background-color: rgb(84, 213, 64);
     }
     25% {
-        background-color: rgb(30, 168, 232);
+        background-color: rgb(245, 60, 9);
     }
     50% {
-        background-color: rgb(36, 82, 234);
+        background-color: rgb(190, 29, 244);
     }
     75% {
-        background-color: rgb(38, 23, 245);
+        background-color: rgba(235, 222, 40, 0.839);
     }
     100% {
-        background-color: rgb(21, 4, 249);
+         background-color: rgb(3, 64, 246);
     }
 }
 
 @keyframes slidedownc2
 {
     0% {
-        background-color: rgb(225, 69, 69);
+        background-color: rgb(119, 248, 145);
     }
     25% {
-        background-color: rgb(232, 229, 30);
+        background-color: rgb(243, 98, 62);
     }
     50% {
-        background-color: rgb(36, 191, 234);
+        background-color: rgb(196, 70, 241);
     }
     75% {
-        background-color: rgb(67, 245, 23);
+        background-color: rgb(249, 240, 117);
     }
     100% {
-        background-color: rgb(231, 40, 100);
+        background-color: rgba(45, 80, 239, 0.835);
     }
 }
 
 @keyframes slidedownc3 
 {
     0% {
-        background-color: rgb(49, 135, 255);
+        background-color: rgb(131, 245, 182);
     }
     25% {
-        background-color: rgb(232, 30, 144);
+        background-color: rgb(243, 124, 55);
     }
     50% {
-        background-color: rgb(234, 72, 36);
+        background-color: rgb(243, 113, 250);
     }
     75% {
-        background-color: rgb(245, 23, 201);
+        background-color: rgb(249, 227, 139);
     }
     100% {
-        background-color: rgb(192, 249, 4);
+        background-color: rgba(76, 109, 239, 0.406);
     }
 }
 
 @keyframes slidedownc4 
 {
     0% {
-        background-color: rgb(213, 201, 64);
+        background-color: rgb(158, 236, 202);
     }
     25% {
-        background-color: rgb(232, 101, 30);
+        background-color: rgb(251, 188, 154);
     }
     50% {
-        background-color: rgb(234, 36, 201);
+        background-color: rgb(247, 165, 233);
     }
     75% {
-        background-color: rgb(245, 23, 23);
+        background-color: rgb(254, 246, 176);
     }
     100% {
-        background-color: rgb(4, 220, 249);
+        background-color: rgb(133, 179, 243);
     }
 }
 
@@ -311,19 +428,19 @@ p.aboutme
 @keyframes slidedownc5
 {
     0% {
-        background-color: rgb(213, 116, 64);
+        background-color: rgb(145, 230, 241);
     }
     25% {
-        background-color: rgb(138, 232, 30);
+        background-color: rgb(255, 212, 188);
     }
     50% {
-        background-color: rgb(36, 234, 211);
+        background-color: rgb(238, 208, 253);
     }
     75% {
-        background-color: rgb(149, 23, 245);
+        background-color: rgb(255, 254, 214);
     }
     100% {
-        background-color: rgb(4, 249, 24);
+        background-color: rgb(144, 173, 242);
     }
 }
 
@@ -331,15 +448,23 @@ p.aboutme
 
 .contactsegment
 {
-    display: block;
+    display: none;
     position:absolute;
     color:rgb(246, 248, 249);
-    text-shadow: 2px 2px 5px rgb(8, 8, 8);
-    background-image:url("BackgroundMainPage.png");
+    text-shadow: 4px 4px 10px rgb(8, 8, 8);
+
     height:100%;
     width:100%;
     margin:0%;
+
+    background-image: url("contactbg3.png");
+    background-size: cover;
+    background-position: center;
+
+
 }
+
+
 
 .contactdet
 {
@@ -349,27 +474,51 @@ p.aboutme
     margin:110px 0px 50px 100px;
 }
 
+
+
 .contactborder
 {
     display:flex;
     align-items: center;
-    margin:5% 25% 20% 25%;
+    margin:10% 25% 20% 25%;
     flex-direction: column;
     width:45%;
     height:45%;
     padding:20px;
 
-
-    background-color:rgb(5, 0, 0);
-    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.388);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
     border-style: solid;
-    border-color: rgb(203, 194, 115);
+    border-color:transparent;
     border-width: .1px;
-    box-shadow: 1px 1px 15px rgb(252, 252, 252);    
+    box-shadow: 3px 3px 15px rgb(255, 255, 255);    
     font-family: "Lexend Deca", serif;
     font-size:2.5vmin;
 
+    
+    animation-name : contactfun;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
+
+
+@keyframes contactfun 
+{
+    from 
+    {
+        transform : rotateY(1500deg);   
+        color :black;
+
+    }
+    to 
+    {
+        transform : rotateY(0deg);
+
+    }
+}
+
 
 .material-symbols-outlined 
 {
@@ -386,9 +535,9 @@ p.aboutme
 {
     font-family:"Roboto Condensed", serif;
     font-style: italic;
-    color:rgba(235, 199, 40, 0.926);
+    color:rgba(254, 253, 250, 0.926);
     margin-bottom: 10%;
-    text-shadow: 1px 1px 2px rgb(239, 237, 237);
+    text-shadow: 4px 4px 5px rgb(0, 0, 0);
     font-size: 4vmin;
     font-weight: 500;
 }
@@ -416,13 +565,139 @@ p.aboutme
     font-size:3.5vmin;
 }
 
+
 .email 
 {
     margin:0px 10px 20px 10px;
 }
+
+
 .email-icon
 {
     color:rgb(250, 251, 252);
     font-size:3.4vmin;
 }
 
+
+
+.projectsegment 
+{
+    display:none;
+    position:absolute;
+    background-image: url("p10.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top:0px;
+}
+
+
+
+.pro_heading
+{
+    font-family: "Rowdies", serif;
+    font-weight:800; 
+    color:rgba(255, 255, 255, 0.993);
+    font-size:4vmin;
+    margin:40px 0px 40px 0px;
+    text-align:center;
+    text-shadow:5px 4px 10px rgba(24, 21, 0, 0.803);
+}
+
+
+.projectlist
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.952);
+}
+
+.project 
+{
+   margin:10px 40px 20px 40px;
+   background-color: rgba(7, 6, 6, 0.597);
+   border-radius: 50px;
+   border-color:transparent;
+   border-style: solid;
+   border-width:0.2px;
+   box-shadow:2px 2px 10px rgba(0, 0, 0, 0.816);
+   padding:20px;
+   backdrop-filter: blur(15px);
+
+   animation-name : projectfun;
+    animation-duration: 2s;
+}
+
+@keyframes projectfun 
+{
+    from 
+    {
+        margin:0px 40px 20px 0px;
+    }
+    to 
+    {
+        margin:10px 40px 20px 40px;
+    }
+}
+
+ph 
+{
+    color:aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:3vmin;
+    font-weight:600;
+    margin-left :20px;
+
+    text-decoration: underline;
+    text-shadow:2px 2px 10px rgba(96, 131, 228, 0.839);
+}
+
+desc 
+{   
+    color:rgb(255, 255, 255);
+    margin:10px 10px 10px 20px;
+    font-family: "Space Grotesk", serif;
+    font-size:2.3vmin;
+    font-weight:600;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.686);
+
+}
+
+
+ts 
+{
+    font-family: "Rowdies", serif;
+    font-weight: 100;
+}
+
+.description
+{
+    display: flex;
+}
+
+.image 
+{
+    border-radius: 20px;
+}
+
+
+.logo 
+{
+    height:8vmin;
+    width:8vmin;
+}
+
+.codechef 
+{
+    height:8vmin;
+    width:10vmin;
+}
+
+
+.logoset 
+{
+    display: flex;
+    justify-content: space-around;
+    margin:20px 0px 20px 0px;
+}
