@@ -1,7 +1,7 @@
 body
 {
-    background-color: rgba(255, 255, 255, 0.803);
     margin:0px;
+    background-color: rgb(255, 255, 255);
     padding:0px;
 }
 
@@ -31,8 +31,24 @@ body
     font-size:4vmin;
     font-weight:600;
     margin: 40px 0px 0px 50px;
+
+    animation-name : slidename;
+    animation-duration: 3s;
 }
 
+@keyframes slidename 
+{
+    from
+    {
+        color :transparent;
+        margin-left:100px;
+    }
+    to 
+    {
+        color:rgba(18, 24, 43, 0.81);
+        margin-left:50px;
+    }
+}
 
 
 
@@ -44,9 +60,8 @@ body
 {
     display: flex;
     flex-flow:row nowrap;
-    justify-content:right
+    justify-content:right;
 }
-
 
 .home
 {
@@ -506,16 +521,30 @@ div button:hover
 
 @keyframes contactfun 
 {
-    from 
+    25%
     {
-        transform : rotateY(1500deg);   
-        color :black;
+        transform : rotatez(5deg);
+        scale:1.025;
+        box-shadow: 2px 2px 50px rgba(235, 222, 40, 0.839);
 
     }
-    to 
+    50%
     {
-        transform : rotateY(0deg);
-
+        transform : rotateZ(0deg);
+        scale:1;
+        box-shadow :transparent;
+    }
+    75%
+    {
+        transform : rotateZ(-5deg);
+        scale:1.025;
+        box-shadow: 2px 2px 50px rgba(235, 222, 40, 0.839);
+    }   
+    100%
+    {
+        transform : rotateZ(0deg);
+        scale:1;
+        box-shadow :transparent;
     }
 }
 
